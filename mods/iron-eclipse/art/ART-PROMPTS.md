@@ -1,4 +1,4 @@
-# Iron Eclipse art
+# Berserk 1998 art
 
 Generated with the Hermes image backend (openai-codex, gpt-image-2-medium).
 All characters are original, in a late-1990s cel-anime dark-fantasy style.

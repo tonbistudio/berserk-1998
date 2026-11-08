@@ -1,8 +1,8 @@
-# Iron Eclipse
+# Berserk 1998
 
-A dark-fantasy war camp for Herdr, painted in the style of a late-1990s cel anime. The sidebar is one tall painting: a fortress on a cliff, a mercenary camp with campfires, and a pine forest. A steel-and-blood "HERDR" wordmark sits at the top. Each agent is a member of the company with a painted portrait. Spaces carry small heraldic shields. The terminals sit over a dusk battlefield with an eclipse. A Missions panel next to Files keeps a to-do list you can cross off.
+A Berserk (1997–98 anime) war camp for Herdr, painted in that late-1990s cel style. The sidebar is one tall painting: a fortress on a cliff, a mercenary camp with campfires, and a pine forest. A steel-and-blood "HERDR" wordmark sits at the top. Each agent is a member of the company with a painted portrait. Spaces carry small heraldic shields. The terminals sit over a dusk battlefield with an eclipse. A Missions panel next to Files keeps a to-do list you can cross off.
 
-![Iron Eclipse](preview.png)
+![Berserk 1998](preview.png)
 
 **What you see:**
 
@@ -33,7 +33,7 @@ A dark-fantasy war camp for Herdr, painted in the style of a late-1990s cel anim
 
 **Built from:**
 
-- **Layout `layouts/iron-eclipse.json`, built by hand** (no clone). Root `row`, with `titlebar: "none"`, `traffic_lights: [12, 16]`, `preview: "layouts/iron-eclipse.svg"` and `divider: { width: 1, color: "border" }`. The tree:
+- **Layout `layouts/berserk-1998.json`, built by hand** (no clone). Root `row`, with `titlebar: "none"`, `traffic_lights: [12, 16]`, `preview: "layouts/berserk-1998.svg"` and `divider: { width: 1, color: "border" }`. The tree:
   - column `sidebar`:
     - block `crest` → `iron-eclipse`
     - block `brand` → `iron-chrome`
@@ -63,14 +63,14 @@ A dark-fantasy war camp for Herdr, painted in the style of a late-1990s cel anim
 - **Opaque panels hide the art.** The shipped mods paint `t.chrome` fully opaque, so cloning them unchanged hides the sidebar painting. Every `.bg(t.chrome)` in the sidebar mods must become `.bg(t.chrome + "78")`.
 - **Dark source art disappears.** Generated "very dark" paintings average about 25/255 and vanish under the translucent panels. Ask for "evenly mid-dark, detail everywhere, no large black areas", or lift them afterwards.
 - **Herdr caches backgrounds by filename.** A replaced image needs a new name (`-v5`, `-v6`). Then point the layout at it and switch layouts away and back.
-- **Herdr can rewrite the layout file.** It pretty-prints `layouts/iron-eclipse.json` and once added a stray root-level `missions` block. Check that `missions` sits only in `panel-body`.
+- **Herdr can rewrite the layout file.** It pretty-prints `layouts/berserk-1998.json` and once added a stray root-level `missions` block. Check that `missions` sits only in `panel-body`.
 - **The Missions button is always shown**, even if `shared("workspace.panels")` leaves Files or Changes out. Double-clicking a mission does not edit it, because the first click already crosses it off. Use the pen.
 - **Clones:** the clones are of Herdr 0.1.13. Re-check them after an app update. `herdr-app check` passes even with an undefined name, so look at the window too.
 - **Screenshots:** `herdr-app shot` can return a stale frame while the window is minimized or the screen is locked. Compare two shots before trusting one.
 
 **Done when:**
 
-- `herdr-app check` passes for `iron-eclipse`, `iron-chrome`, `iron-spaces`, `iron-agents`, `iron-tabs`, `iron-pane` and `missions`. After `layout.switch {"name":"iron-eclipse"}`, `herdr-app status` shows `"errors": []`.
+- `herdr-app check` passes for `iron-eclipse`, `iron-chrome`, `iron-spaces`, `iron-agents`, `iron-tabs`, `iron-pane` and `missions`. After `layout.switch {"name":"berserk-1998"}`, `herdr-app status` shows `"errors": []`.
 - The sidebar shows the fortress/camp/forest painting behind the space and agent lists, and the HERDR wordmark with "all is still" at the top.
 - Every space shows a shield with its initial, and every agent row shows a 68px portrait. Two agents never share a face until there are more than eight.
 - The terminals show the eclipse battlefield behind their text.
