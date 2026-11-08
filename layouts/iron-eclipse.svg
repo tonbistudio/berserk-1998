@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200">
+  <defs>
+    <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a0c0a"/>
+      <stop offset="100%" stop-color="#0a0807"/>
+    </linearGradient>
+    <radialGradient id="corona" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff5a3c"/>
+      <stop offset="45%" stop-color="#c0241c" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#120e0c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="320" height="200" fill="#0a0807"/>
+  <!-- sidebar -->
+  <rect width="84" height="200" fill="#120e0c"/>
+  <rect x="84" width="1" height="200" fill="#3a2a22"/>
+  <circle cx="42" cy="26" r="20" fill="url(#corona)"/>
+  <circle cx="42" cy="26" r="10" fill="#050303" stroke="#ffb27a" stroke-width="1"/>
+  <rect x="18" y="50" width="48" height="5" rx="1" fill="#dccaa5"/>
+  <rect x="0" y="62" width="84" height="1" fill="#3a2a22"/>
+  <rect x="10" y="72" width="60" height="4" fill="#a8957a"/>
+  <rect x="10" y="82" width="46" height="4" fill="#75654f"/>
+  <rect x="6" y="90" width="72" height="10" fill="#a3201b44"/>
+  <rect x="10" y="93" width="52" height="4" fill="#dccaa5"/>
+  <circle cx="14" cy="122" r="3" fill="#e0332b"/>
+  <rect x="22" y="120" width="44" height="4" fill="#a8957a"/>
+  <circle cx="14" cy="134" r="3" fill="#cf7a2c"/>
+  <rect x="22" y="132" width="38" height="4" fill="#a8957a"/>
+  <circle cx="14" cy="146" r="3" fill="#c9a85a"/>
+  <rect x="22" y="144" width="40" height="4" fill="#a8957a"/>
+  <!-- tab bar -->
+  <rect x="85" width="235" height="16" fill="#120e0c"/>
+  <rect x="91" y="4" width="38" height="8" rx="1" fill="#261d19" stroke="#a3201b" stroke-width="1"/>
+  <rect x="134" y="4" width="34" height="8" rx="1" fill="#1c1613"/>
+  <!-- work area -->
+  <rect x="85" y="16" width="235" height="174" fill="url(#dusk)"/>
+  <rect x="90" y="21" width="134" height="164" rx="1" fill="#0d0a09" stroke="#a3201b" stroke-width="2"/>
+  <rect x="229" y="21" width="86" height="164" rx="1" fill="#0d0a09" stroke="#3a2a22" stroke-width="1"/>
+  <rect x="96" y="34" width="70" height="3" fill="#dccaa5"/>
+  <rect x="96" y="42" width="96" height="3" fill="#a8957a"/>
+  <rect x="96" y="50" width="54" height="3" fill="#b3261e"/>
+  <rect x="96" y="58" width="80" height="3" fill="#a8957a"/>
+  <rect x="235" y="34" width="56" height="3" fill="#c9a85a"/>
+  <rect x="235" y="42" width="70" height="3" fill="#a8957a"/>
+  <!-- status bar -->
+  <rect x="85" y="190" width="235" height="10" fill="#120e0c"/>
+  <rect x="85" y="190" width="235" height="1" fill="#3a2a22"/>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff5a3c" stop-opacity="0.95"/>
+      <stop offset="34%" stop-color="#c0241c" stop-opacity="0.9"/>
+      <stop offset="62%" stop-color="#5e0d0a" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#14100e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon" cx="44%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#1a1210"/>
+      <stop offset="100%" stop-color="#050303"/>
+    </radialGradient>
+  </defs>
+  <!-- crimson corona -->
+  <circle cx="100" cy="100" r="98" fill="url(#sky)"/>
+  <!-- jagged rays -->
+  <g fill="#b3261e" opacity="0.75">
+    <polygon points="100,4 104,40 96,40"/>
+    <polygon points="100,196 104,160 96,160"/>
+    <polygon points="4,100 40,96 40,104"/>
+    <polygon points="196,100 160,96 160,104"/>
+    <polygon points="32,32 60,54 54,60"/>
+    <polygon points="168,32 146,60 140,54"/>
+    <polygon points="32,168 54,140 60,146"/>
+    <polygon points="168,168 140,146 146,140"/>
+  </g>
+  <!-- burning rim -->
+  <circle cx="100" cy="100" r="50" fill="none" stroke="#ffb27a" stroke-width="3" opacity="0.9"/>
+  <circle cx="100" cy="100" r="54" fill="none" stroke="#e0332b" stroke-width="4" opacity="0.6"/>
+  <!-- the black sun -->
+  <circle cx="100" cy="100" r="48" fill="url(#moon)"/>
+  <!-- a plain greatsword, point down, through the eclipse -->
+  <g>
+    <rect x="95" y="30" width="10" height="122" fill="#3a3330"/>
+    <rect x="97" y="30" width="3" height="122" fill="#6b625c"/>
+    <polygon points="95,152 105,152 100,172" fill="#3a3330"/>
+    <rect x="72" y="22" width="56" height="9" fill="#2a2421"/>
+    <rect x="72" y="22" width="56" height="2" fill="#5a504a"/>
+    <rect x="96" y="2" width="8" height="20" fill="#2a1a14"/>
+    <circle cx="100" cy="3" r="5" fill="#2a2421"/>
+  </g>
+</svg>
